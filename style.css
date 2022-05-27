@@ -1,0 +1,134 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+body{
+    background-color: #fff8c4;
+}
+.container{
+     background-color: #ffc4d8;
+    width:50% ;
+    margin :auto;
+    border-style: outset ;
+    border-width: 10px;
+    padding: 10px;
+    
+        
+        
+}
+#title{margin:20px;
+       text-align: center;
+       
+       padding-bottom: 20px;
+       font-family: Arial, Helvetica, sans-serif;
+       text-shadow: 5px 5px 10px white;
+      
+    }
+#title h1{
+    font-size: 50px;
+    
+}
+#title h5{
+    font-family: cursive ;
+    font-size: medium;
+    animation-name: title;
+    animation-duration: 10s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    float: left;
+}
+/*@keyframes title{
+    100%{
+    transform : translate(220px);
+
+}*/
+
+h4{
+    font-size: 30px;
+    text-align: center;
+    color:blue;
+    text-shadow: #c5c4ff;
+    padding-bottom: 20px;
+    animation-name: about;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+
+}
+.img-div{
+       
+       background-color: aliceblue;
+       text-align : center;
+}
+#image {
+    max-width: 200px; 
+    height:auto;
+    margin:auto;
+    
+    display: block;
+    
+    }
+
+a{      display: flex;
+        font-size: 20px; 
+        justify-content: center;
+
+}
+@keyframes title{
+    100%{
+    transform : translate(700px);
+    }
+
+}
+@keyframes about{
+    100%{
+        transform: scale(1.5);
+    }
+}
+@media only screen and (max-width: 300px) {
+    #main {
+      width:100%;
+      overflow: hidden;
+      
+        
+    }
+
+           
+        
+    
+    
+    
+    #title h1{
+        flex-shrink: 2;
+        font-size: 20px;}
+}
+    @media only screen and (max-width: 450px){
+    @keyframes title{
+        20%{
+        transform : translate(70px);
+        }
+    
+  }
+    
+}
+@media only screen and (max-width: 300px){
+    @keyframes title{
+        0%{
+        transform : translate(10px);
+        }
+    
+  }
+@media only screen and (max-width: 800px){
+    h4{animation-name: title;
+    animation-direction: normal;
+animation-duration: 4sec;}
+    @keyframes title{
+        20%{
+        transform : translate(200px);
+        }
+    
+    }
+}
+}
